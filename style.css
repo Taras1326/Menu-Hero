@@ -1,0 +1,59 @@
+.box-menu {
+    width: 250px;
+    height: 620px;
+    background-color: gray;
+    padding: 50px 20px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: all 0.5s linear 0.3s;
+}
+
+.box-menu:hover {
+    left: 0;
+    .menu-card {
+        opacity: 0;
+    }
+}
+
+
+.menu-title {
+    list-style: none;
+}
+
+.menu-list {
+    color: #fff;
+font-size: 25px;
+padding-bottom: 15px;
+}
+
+.menu-list:hover {
+    color: goldenrod;
+}
+
+.menu-list::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: goldenrod;
+    display: inline-block;
+    border: 3px solid black;
+    margin-right: 10px;
+    transform: rotate(45deg);
+}
+
+
+
+.menu-card {
+    color: #fff;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.78px;
+position: absolute;
+top: 45%;
+left: 150px;
+transform: rotate(270deg);
+width: 250px;
+}
